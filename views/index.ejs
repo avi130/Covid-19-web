@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 style="text-align: center;"><%= title %> </h1>
+    <h3>Other links: </h3>
+    To check daily new confirmed cases in a given country
+    <a href="/" id="confirmed" title="Link">CLICK HERE </a><br><br>
+    To Compare between two countries (daily difference between the
+    percentages of the population confirmed cases) 
+    <a href="/compare" id="compare" title="Link">CLICK HERE</a><br><br>
+    To check number of COVID-19 deaths by country
+    <a href="/deaths" id="deaths" title="Link">CLICK HERE    </a><br><br>
+    <hr></hr>
+
+    <form action="/ans_confirmed" method="POST">
+        <h3>Enter details: </h3>
+        <label for="fcountry">Enter country in Alpha-3 code format:</label>
+        <input type="text" id="fcountry" name="country"><br><br>
+        <label for="fdate">Enter date:</label>
+        <input type="date" id="fdate" name="date"><br><br>
+        <button id='subButton' >SEND</button>
+    </form>
+    <p>
+        <h4><span id="final_ans"></span> </h4>
+    </p>
+  </body>
+</html>

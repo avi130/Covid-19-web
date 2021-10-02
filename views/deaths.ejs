@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Number of COVID-19 deaths by country </h1>
+    <h3>Other links: </h3>
+    To check daily new confirmed cases in a given country
+    <a href="/" title="Link">CLICK HERE </a><br><br>
+    To Compare between two countries (daily difference between the
+    percentages of the population confirmed cases) 
+    <a href="/compare" title="Link">CLICK HERE</a><br><br>
+    To check number of COVID-19 deaths by country
+    <a href="/deaths" title="Link">CLICK HERE    </a><br><br>
+
+    <form action="/add_to_list" method="POST">
+        <h3>Enter details: </h3>
+        <label for="add_country">Add country here:</label>
+        <input type="text" id="add_country" name="add_country">
+        <button id='add_Button'>ADD</button><br><br>
+    
+    </form>
+
+    <form action="/delete_from_list" method="POST">
+        <label for="delete_country">Delete country here:</label>
+        <input type="text" id="delete_country" name="delete_country">
+        <button id='delete_Button'>DELETE</button><br><br>
+    </form>
+
+
+    <form action="/list_deaths" method="POST">
+        <button id='get_list_Button'>To see the list of countries click here !</button>
+        <br><br>
+    </form>
+
+    <form action="/ans_deaths" method="POST">
+        <label for="from_date">Enter from date:</label>
+        <input type="date" id="from_date" name="from_date"><br><br>
+        <label for="to_date">Enter to date:</label>
+        <input type="date" id="to_date" name="to_date"><br><br>
+
+        <button id='subButton'>SEND</button>
+
+        
+    </form>
+
+</body>
+</html>

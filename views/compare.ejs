@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Compare between two countries daily difference</h1>
+    <h3>Other links: </h3>
+    To check daily new confirmed cases in a given country
+    <a href="/" title="Link">CLICK HERE </a><br><br>
+    To Compare between two countries (daily difference between the
+    percentages of the population confirmed cases) 
+    <a href="/compare" title="Link">CLICK HERE</a><br><br>
+    To check number of COVID-19 deaths by country
+    <a href="/deaths" title="Link">CLICK HERE    </a><br><br>
+    
+
+    <form action="/ans_compare" method="POST">
+        <h3>Enter details: </h3>
+        <label for="fcountry">Enter first country in Alpha-3 code format:</label>
+        <input type="text" id="fcountry" name="country1"><br><br>
+        <label for="lcountry">Enter second country in Alpha-3 code format:</label>
+        <input type="text" id="lcountry" name="country2"><br><br>
+
+        <label for="from_date">Enter from date:</label>
+        <input type="date" id="from_date" name="from_date"><br><br>
+        <label for="to_date">Enter to date:</label>
+        <input type="date" id="to_date" name="to_date"><br><br>
+
+        <button id='subButton'>SEND</button>
+    </form>
+
+</body>
+</html>
